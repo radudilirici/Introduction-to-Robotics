@@ -1,4 +1,4 @@
-// notes, melody and tone taken from https://gist.github.com/Pietruz3000/a03f8cb4ea993a609764279e2bcbdac7
+// notes, melody and tones taken from https://gist.github.com/Pietruz3000/a03f8cb4ea993a609764279e2bcbdac7
 #define NOTE_B0  31
 #define NOTE_C1  33
 #define NOTE_CS1 35
@@ -159,13 +159,13 @@ const int buzzerPin = 2;
 const int buttonPin = 7;
 const int threshold = 0;
 const int melodyDelay = 5000;
+const int melodySize = sizeof(melody) / sizeof(int);
 
 int sensorReading = 0;
 int buttonState = LOW;
 int melodyOn = 0;
 int waitingForMelody = 0;
 int currentNote = 0;
-int melodySize = sizeof(melody) / sizeof(int);
 int pauseBetweenNotes = 0;
 
 unsigned long int lastMillis = 0;
@@ -187,7 +187,7 @@ void sing() {
   
   int noteDuration = 1000 / tempo[currentNote] * 1.2;
   tone(buzzerPin, melody[currentNote], noteDuration);
-  pauseBetweenNotes = noteDuration * 1.30;
+  pauseBetweenNotes = noteDuration * 1.3;
   lastNoteMillis = millis();
   
   ++ currentNote;
