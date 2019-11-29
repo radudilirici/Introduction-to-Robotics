@@ -13,3 +13,6 @@ A program that shows 4 digits on a 7 segment display. The digits can be changed 
 A game menu that lets you select between playing the game, editing the settings and viewing the highscore. The game section doesn't do much; it just shows you your lives, the current level and the score. The level increases by one after 5 seconds and the whole game has 10 seconds. In the settings section you can change the level (difficulty) and your name by entering it in the Arduino Serial Monitor. In the HighScore section you can see the best score ever achieved and also who had that score. The name and the score of the best player is saved, so Arduino will remember it even after it is shut down.
 Video:
 https://youtu.be/ayoqDXiHQCQ
+
+### hw4_GameMenu_StyledCode
+It is the same program as hw4, but I changed some coding style to fit the one we were told to use at the labs.
