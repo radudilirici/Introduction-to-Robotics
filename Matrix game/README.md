@@ -21,4 +21,4 @@ For the control it is used a joystick.
 While playing, some info is displayed on the LCD.
 
 The score will increase constantly depending on the difficulty level.
-The best score will be saved on EEPROM.
+The best score will be saved in EEPROM.
