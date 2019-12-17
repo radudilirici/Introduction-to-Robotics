@@ -33,3 +33,5 @@ Here, the player can also see the 'How to play?' section and have a quick remind
 Here, the best three scores are shown alongside with the names of the players who did the scores.
 #### 4. About
 This section contanis info about the game, like: the game name, the author of the game, the github link and that it was made for the Unibuc Robotics course.
+
+The main file is MatrixGame.ino
