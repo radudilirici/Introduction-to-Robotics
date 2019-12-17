@@ -21,3 +21,15 @@ While playing, some info is displayed on the LCD (the current number of lifes, s
 
 The score will increase constantly depending on the difficulty level.
 The best three scores are saved in EEPROM.
+
+### The menu
+The menu has four options.
+###### 1. Play
+The first one is to play the game. After the option is selected, the player is announced that the game is starting and after a brief period of time the game will start.
+###### 2. Settings
+In this seciton the player can choose the starting difficulty of the game and the player name.
+Here, the player can also see the 'How to play?' section and have a quick reminder of how the game works.
+###### 3. Score
+Here, the best three scores are shown alongside with the names of the players who did the scores.
+###### 4. About
+This section contanis info about the game, like: the game name, the author of the game, the github link and that it was made for the Unibuc Robotics course.
