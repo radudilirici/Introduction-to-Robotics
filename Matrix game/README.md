@@ -1,5 +1,5 @@
 # Grapp Remastered
-## Endless runner
+# Endless runner
 
 ### The game
 The game is an endless runner. While moving forward, the player will encounter various obstacles generated on the run.
