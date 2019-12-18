@@ -20,7 +20,7 @@ bool hardMode;
 // Matrix and Level
 const byte displayHeight = 16;
 const byte displayWidth = 8;
-const byte levelHeight = 24;
+const byte levelHeight = 20;
 const byte levelWidth = 8;
 const byte displayOffset = levelHeight - displayHeight;
 byte level[levelHeight][levelWidth];
@@ -112,12 +112,12 @@ const bool movingObstacles[noOfMovingObstacles][6][6] = { // the moving objects 
 
 unsigned long int lastMillisForMovingObstacles[noOfMovingObstacles];
 
-const int millisForMovingObstacles[noOfMovingObstacles][6] = {
-  {200, 200, 500, 200, 200, 300},
-  {200, 200, 200, 200, 200, 200},
-  {800, 400, 400, 800, 400, 400},
-  {200, 200, 200, 200, 200, 200},
-  {200, 200, 200, 200, 200, 200}
+const byte millisForMovingObstacles[noOfMovingObstacles][6] = { // * 100
+  {2, 2, 5, 2, 2, 3},
+  {2, 2, 2, 2, 2, 2},
+  {8, 4, 4, 8, 4, 4},
+  {2, 2, 2, 2, 2, 2},
+  {2, 2, 2, 2, 2, 2}
 };
 
 // represents the current configuration for each moving obstacle
@@ -303,7 +303,7 @@ void moveLevel(){
 
 void moveMovingObstacles(){
   for (byte currentMovingObstacle = 0; currentMovingObstacle < noOfMovingObstacles; currentMovingObstacle++){ // all the moving obstacles of type n-th have the same configuration
-    if (millis() - lastMillisForMovingObstacles[currentMovingObstacle] >= millisForMovingObstacles[currentMovingObstacle][movingObstaclesFrames[currentMovingObstacle]]){ // if enough time has passed since the last object move
+    if (millis() - lastMillisForMovingObstacles[currentMovingObstacle] >= 100 * millisForMovingObstacles[currentMovingObstacle][movingObstaclesFrames[currentMovingObstacle]]){ // if enough time has passed since the last object move
       movingObstaclesFrames[currentMovingObstacle] += 1;
       if (movingObstaclesFrames[currentMovingObstacle] >= 6){
         movingObstaclesFrames[currentMovingObstacle] = 0;
