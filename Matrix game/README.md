@@ -1,11 +1,10 @@
 # Grapp Remastered
-# Endless runner
+
 Game presentation: https://youtu.be/y43-t0pTpAc
 
 ### The game
 The game is an endless runner. While moving forward, the player will encounter various obstacles generated on the run.
 Colliding with them will result in losing a life (up to 3). Touching an obstacle from sideways won't result in a collision.
-The difficulty level increases with time and that includes spawning more advanced obstacles and speeding up the forward movement. Some of the obstacles have animations and change their states over time.
 
 ### How to play
 The player position is controlled by using the joystick X axis. Specifying a direction will make the player to move to that side all the way to the border of the screen, or untill the oposite direction is chosen.
@@ -16,11 +15,21 @@ After reviving, the player will not move sideways until it's told to.
 If the player loses their last life, the game is over.
 
 ### Technical requierments
-The game is displayed on two 8x8 matrixes (16 rows, 8 columns) using two MAX7219 drivers that are connected.
-For the control it is used a joystick.
-While playing, some info is displayed on the LCD (the current number of lifes, score and the difficulty level). The LCD congtrast can be controlled with a potentiometer.
+For the hardware part I used:
+- Arduino UNO
+- two 8x8 matrices
+- two MAX7219 Drivers
+- LCD
+- Potentiometer
+- Joystick
+- one normal sized Breadboard and 4 mini Breadboards
+- Wires
 
-The score will increase constantly depending on the difficulty level.
+The game is displayed on the two 8x8 matrices (16 rows, 8 columns).
+For the control it is used a joystick.
+While playing, some info is displayed on the LCD (the current number of lifes, score and the difficulty level). The LCD contrast can be changed with a potentiometer. The LCD only refreshes when something has changed on the screen, so it won't flicker.
+
+The difficulty level increases with time and that includes spawning more advanced obstacles and speeding up the forward movement. Some of the obstacles have animations and change their states over time. The score will increase constantly depending on the difficulty level.
 The best three scores are saved in EEPROM.
 
 ### The menu
@@ -34,6 +43,3 @@ Here, the player can also see the 'How to play?' section and have a quick remind
 Here, the best three scores are shown alongside with the names of the players who did the scores.
 #### 4. About
 This section contanis info about the game, like: the game name, the author of the game, the github link and that it was made for the Unibuc Robotics course.
-
-### Info
-The main file is MatrixGame.ino
