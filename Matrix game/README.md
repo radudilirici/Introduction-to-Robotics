@@ -35,7 +35,7 @@ The difficulty level increases with time and that includes spawning more advance
 The best three scores are saved in EEPROM.
 
 ### The menu
-The menu has four options. While navigating through it, a animation will play on the matrices.
+The menu has four options. While navigating through it, an animation will play on the matrices.
 #### 1. Play
 The first one is to play the game. After the option is selected, the player is announced that the game is starting and after a brief period of time the game will start.
 #### 2. Settings
