@@ -1,5 +1,6 @@
 # Grapp Remastered
 
+![IMG_20191219_124948](https://user-images.githubusercontent.com/27884873/71325777-77e2d600-24fa-11ea-8b67-2c4e6983cca5.jpg)
 Game presentation: https://youtu.be/y43-t0pTpAc
 
 ### The game
@@ -7,7 +8,7 @@ The game is an endless runner. While moving forward, the player will encounter v
 Colliding with them will result in losing a life (up to 3). Touching an obstacle from sideways won't result in a collision.
 
 ### How to play
-The player position is controlled by using the joystick X axis. Specifying a direction will make the player to move to that side all the way to the border of the screen, or untill the oposite direction is chosen.
+The player position is controlled by using the joystick X axis. Specifying a direction will make the player move to that side all the way to the border of the screen, or until the opposite direction is chosen.
 
 If the player dies, the game will slow and eventually stop moving until pressing the joystick button, thus reviving the player.
 While in the "dead" state, the joystick X axis is used to move the player just one position at a time.
@@ -33,7 +34,7 @@ The difficulty level increases with time and that includes spawning more advance
 The best three scores are saved in EEPROM.
 
 ### The menu
-The menu has four options.
+The menu has four options. While navigating through it, a animation will play on the matrices.
 #### 1. Play
 The first one is to play the game. After the option is selected, the player is announced that the game is starting and after a brief period of time the game will start.
 #### 2. Settings
