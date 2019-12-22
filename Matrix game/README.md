@@ -1,6 +1,7 @@
 # Grapp Remastered
 
-![IMG_20191219_124948](https://user-images.githubusercontent.com/27884873/71325777-77e2d600-24fa-11ea-8b67-2c4e6983cca5.jpg)
+![In Menu](https://user-images.githubusercontent.com/27884873/71325777-77e2d600-24fa-11ea-8b67-2c4e6983cca5.jpg)
+![In Game](https://user-images.githubusercontent.com/27884873/71325945-c6916f80-24fc-11ea-8dec-f84f93092908.png)
 Game presentation: https://youtu.be/y43-t0pTpAc
 
 ### The game
