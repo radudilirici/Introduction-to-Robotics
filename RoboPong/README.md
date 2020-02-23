@@ -25,6 +25,8 @@ In order to do this, the player must pair to the Bluetooth Module of the game an
 The finger was 3D Printed by [Alex Tesileanu](https://github.com/TesileanuAlexandru). It is turned left or right by a Servo Motor.
 There are also two Servo Motors attached to the finger that control the joints with nylon strings. On its back there is a resort so it gets to a straight position when the strings are released.
 
+![Behind the scenes](https://user-images.githubusercontent.com/27884873/75118629-3bf7f880-5684-11ea-9012-d5142f4005ad.jpg)
+
 
 The poject has the next components:
 - Arduino UNO x2
