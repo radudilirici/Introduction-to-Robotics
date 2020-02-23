@@ -1,7 +1,7 @@
 # RoboPong
 
 ### Description
-The project consists in a robotic finger that plays Pong as the second player.
+The project consists in a Robotic Finger that plays Pong as the second player.
 Each player controls its bar with a joystick and the game is displayed on a 128px LCD Display.
 
 ### The Game
@@ -25,6 +25,11 @@ In order to do this, the player must pair to the Bluetooth Module of the game an
 The finger was 3D Printed by [Alex Tesileanu](https://github.com/TesileanuAlexandru). It is turned left or right by a Servo Motor.
 There are also two Servo Motors attached to the finger that control the joints with nylon strings. On its back there is a resort so it gets to a straight position when the strings are released.
 
+
+Because the project uses two Arduinos, you must upload GameMenu to the master Arduino, and the ServoSlave to the slave Arduino.
+I used a second Arduino because the display functions interfere with the Servo Motors that were not on pins 9 or 10.
+That is probably because the Servo.h library disables AnalogWrite() on these pins on Arduino UNO. I will try to manually disable AnalogWrite() on another pin to see if that's the case. If so, I will remove the second Arduino.
+
 ![Behind the scenes](https://user-images.githubusercontent.com/27884873/75118629-3bf7f880-5684-11ea-9012-d5142f4005ad.jpg)
 
 
@@ -39,10 +44,11 @@ The poject has the next components:
 - 5V Power Supply for Breadboard
 - Charger x3
 - 450 mAh Battery
+- 100μF Capacitor
 - Joystick x2
 - Breadboard x2
 - Mini Breadboard
 - Wires
 
 
-This project was made for Unibuc Robotics, a course at University of Bucharest.
+This project was made for the Unibuc Robotics course at University of Bucharest.
