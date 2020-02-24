@@ -4,6 +4,11 @@
 The project consists in a Robotic Finger that plays Pong as the second player.
 Each player controls its bar with a joystick and the game is displayed on a 128px LCD Display.
 
+### Presentation
+[YouTube Video](https://youtu.be/8ybk-YPzkRg)
+
+![Behind the scenes](https://user-images.githubusercontent.com/27884873/75118629-3bf7f880-5684-11ea-9012-d5142f4005ad.jpg)
+
 ### The Game
 The game itself is a Pong with some new features to make it more entertaining.
 After the ball touches a bar, there is a posibility that it will recieve one of these effects: smaller bar, bigger bar and slower bar. Each time you have one of these, the color of your bar changes acording to the effect (red, green or blue) in order to make it more obvious.
@@ -13,8 +18,9 @@ You can choose between two game modes in the options: AI and BT.
 ### The Finger
 In the 'AI' mode the finger plays by itself to defeat you (and does a pretty good job at it).
 When navigating the menu, the finger will not move, but when you select the 'Play' option the finger will bend its joints in order to touch the joystick.
-Each time you hit the ball it calculates the exact position at which the ball will reach the side of the finger based on the ball position and the ball trajectory.
-Because of this and because the finger is precise enough, it always gets to the ball. To be noted that the bar only moves because the joystick is moved by the robotic finger (you can remove his joystick in order to win :D).
+Each time you hit the ball it calculates the exact position at which the ball will reach the side of the finger based on the ball position and the ball trajectory. Because of this and because the finger is precise enough, it always gets to the ball.
+
+To be noted that the bar only moves because the joystick is moved by the robotic finger (you can remove the joystick in order to win :D).
 
 ### Bluetooth
 If you select the 'BT' mode the game can be played in two. The first player will play as usual, with his joystick, but the second player will tell the finger to move left or right via Bluetooth.
@@ -25,13 +31,9 @@ In order to do this, the player must pair to the Bluetooth Module of the game an
 The finger was 3D Printed by [Alex Tesileanu](https://github.com/TesileanuAlexandru). It is turned left or right by a Servo Motor.
 There are also two Servo Motors attached to the finger that control the joints with nylon strings. On its back there is a resort so it gets to a straight position when the strings are released.
 
-
 Because the project uses two Arduinos, you must upload GameMenu to the master Arduino, and the ServoSlave to the slave Arduino.
 I used a second Arduino because the display functions interfere with the Servo Motors that were not on pins 9 or 10.
 That is probably because the Servo.h library disables AnalogWrite() on these pins on Arduino UNO. I will try to manually disable AnalogWrite() on another pin to see if that's the case. If so, I will remove the second Arduino.
-
-![Behind the scenes](https://user-images.githubusercontent.com/27884873/75118629-3bf7f880-5684-11ea-9012-d5142f4005ad.jpg)
-
 
 The poject has the next components:
 - Arduino UNO x2
@@ -50,5 +52,6 @@ The poject has the next components:
 - Mini Breadboard
 - Wires
 
+This project was made for the Introduction to Robotics course at University of Bucharest.
 
-This project was made for the Unibuc Robotics course at University of Bucharest.
+@UnibucRobotics
