@@ -7,7 +7,7 @@
 #define SLAVE_ADDR 9
 
 const int jointDownPin = 9, jointUpPin = 10;
-Servo jointDown, jointUp;  // servo for right-left, lower joint and upper joint
+Servo jointDown, jointUp;
 
 unsigned long int fingerTimer, dancePhase = 1;
 
