@@ -18,7 +18,7 @@ You can choose between two game modes in the options: AI and BT.
 ### The Finger
 In the 'AI' mode the finger plays by itself to defeat you (and does a pretty good job at it).
 When navigating the menu, the finger will not move, but when you select the 'Play' option the finger will bend its joints in order to touch the joystick.
-Each time you hit the ball it calculates the exact position at which the ball will reach the side of the finger based on the ball position and the ball trajectory. Because of this and because the finger is precise enough, it always gets to the ball.
+Each time you hit the ball it calculates the exact position at which the ball will reach its side. For this, it uses the ball position, the ball trajectory and the screen size. Because of this and because the finger is fast and precise enough, it always gets to the ball.
 
 To be noted that the bar only moves because the joystick is moved by the robotic finger (you can remove the joystick in order to win :D).
 
