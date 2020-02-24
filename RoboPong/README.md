@@ -31,6 +31,8 @@ In order to do this, the player must pair to the Bluetooth Module of the game an
 The finger was 3D Printed by [Alex Tesileanu](https://github.com/TesileanuAlexandru). It is turned left or right by a Servo Motor.
 There are also two Servo Motors attached to the finger that control the joints with nylon strings. On its back there is a resort so it gets to a straight position when the strings are released.
 
+For the display I used [this](https://github.com/sumotoy/TFT_ILI9163C) library, but I changed some of its settings, because the image was not fitting the screen. The changes were made in the '\_settings\TFT_ILI9163C_settings.h' file. About a third of the display was not displaying properly, so I changed the '#define \_\_OFFSET		32' to '#define \_\_OFFSET		0'. There was also a line on the other axis that didn't work. I didn't find a value for another offset, so I increased the width of the screen by one pixel and it worked. This means that the x = 0 line is not displayed and you must take this into consideration. For this I changed the '#define \_GRAMWIDTH      128' to '#define \_GRAMWIDTH      129'. I made these changes only for the \_\_144_RED_PCB__. If you have another display, you might want to change the values for your version.
+
 Because the project uses two Arduinos, you must upload GameMenu to the master Arduino, and the ServoSlave to the slave Arduino.
 I used a second Arduino because the display functions interfere with the Servo Motors that were not on pins 9 or 10.
 That is probably because the Servo.h library disables AnalogWrite() on these pins on Arduino UNO. I will try to manually disable AnalogWrite() on another pin to see if that's the case. If so, I will remove the second Arduino.
