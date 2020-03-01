@@ -2,7 +2,7 @@
 
 ### Description
 The project consists in a Robotic Finger that plays Pong as the second player.
-Each player controls its bar with a joystick and the game is displayed on a 128px LCD Display.
+Each player controls its bar with a joystick and the game is displayed on a 128x128px LCD Display.
 
 ### Presentation
 [YouTube Video](https://youtu.be/8ybk-YPzkRg)
